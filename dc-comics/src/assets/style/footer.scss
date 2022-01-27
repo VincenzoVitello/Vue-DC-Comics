@@ -16,6 +16,7 @@
             color: white;
             &:hover{
                 cursor: pointer;
+                font-size: 18px;
             }
         }
         a{
@@ -27,5 +28,27 @@
             width: 100%;
             object-fit: contain;
         }
+    }
+}
+.footerBackGround{
+    
+    height: 100%;
+    ul{
+        list-style-type: none;
+        li{
+            text-decoration: none;
+        }
+    }
+}
+.leftSection{
+    display: flex;
+}
+.footerOne, .footerTwo, .footerTre{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin: 15px;
+    li{
+        color: grey;
     }
 }
