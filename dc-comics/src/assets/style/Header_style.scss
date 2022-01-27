@@ -1,6 +1,16 @@
 @import 'variables.scss';
+.header_container{
+    height: 120px;
+    max-width: 1000px;
+}
 .header_right_list{
     display: flex;
+}
+.header_left{
+    align-self: center;
+    img:hover{
+        cursor: pointer;
+    }
 }
 nav{
    display: flex;
@@ -16,10 +26,13 @@ nav{
    
    a{
        text-decoration: none;
+       text-transform: uppercase;
        color: $secondaryColor;
        margin: 10px ;
        &:hover{
            color: $mainColor;
+           border-bottom: 3px solid $mainColor;
+           padding-bottom: 46px
        }
    }
 }

@@ -1,8 +1,8 @@
 <!-- inserimento HTML -->
 <template>
-  <div class="container">
+  <div class="container header_container">
       <div class="header_left">
-         <img src="../assets/img/dc-logo.png" alt="">
+         <a href=""><img src="../assets/img/dc-logo.png" alt=""></a>
       </div>
       <div class="header_right_list">
           <nav>
