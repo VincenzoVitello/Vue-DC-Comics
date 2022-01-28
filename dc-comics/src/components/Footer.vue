@@ -67,7 +67,7 @@
 <script>
 export default {
     name: 'Footer',
-       data(){
+    data(){
      return {
          links: [
              {
