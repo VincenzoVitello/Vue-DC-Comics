@@ -1,0 +1,63 @@
+@import '../../assets/style/global.scss';
+@import '../../assets/style/variables.scss';
+.container_bottom_section{
+  position: relative;
+  background-color: $secondaryColor;
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  .thumbnail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+  }
+  img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  p{
+    font-size: 15px;
+    margin-top: 3px;
+  }
+}
+.thumbs-container{
+  margin: 25px 0 100px 0;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+  button{
+    padding: 10px 30px;
+    text-transform: uppercase;
+    color: white;
+    background-color: $mainColor;
+    outline: none;
+    border: 1px solid $mainColor;
+    position: absolute;
+    bottom: 15px;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}
+.current_series{
+  background-color: $mainColor;
+  display: flex;
+  align-items: center;
+  color: white;
+  text-transform: uppercase;
+  height: 40px;
+  padding: 0 35px;
+  position: absolute;
+  top: -20px;
+  left: 125px;
+
+}
+

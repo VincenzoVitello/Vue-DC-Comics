@@ -8,9 +8,9 @@
     </div>
    
     
-  </div>
-   <div class="footerBackGround">
-     <div class="container">
+    </div>
+    <div class="footerBackGround">
+     <div class="bottom_footer_container">
        <div class="leftSection">
          <div class="footerOne">
               <h2>DC Comics</h2>
@@ -61,6 +61,17 @@
        </div>
      </div>
     </div>
+    <div class="contacts_container">
+      <button>SIGN UP NOW!</button>
+      <div class="socials">
+        <p>FOLLOW US!</p>
+        <img src="../assets/img/footer-facebook.png" alt="">
+        <img src="../assets/img/footer-twitter.png" alt="">
+        <img src="../assets/img/footer-youtube.png" alt="">
+        <img src="../assets/img/footer-pinterest.png" alt="">
+        <img src="../assets/img/footer-periscope.png" alt="">
+      </div>
+    </div>
   </div>
 </template>
 
@@ -104,14 +115,59 @@ export default {
 
 <style lang="scss" scoped>
 @import '../assets/style/footer.scss';
-.container{
-  justify-content: space-between;
+@import '../assets/style/variables.scss';
+.bottom_footer_container{
+  display: flex;
+  justify-content: space-evenly;
+}
+.leftSection{
+  margin-top: 30px;
 }
 .footerBackGround{
   background-image: url("../assets/img/footer-bg.jpg");
-  height: 600px;
-  transform: translate(-150px -100px);
+  height: 350px;
   background-repeat: repeat-x;
+  overflow: hidden;
   object-fit: cover;
+
+  img{
+    transform: translateY(-100px);
+  }
 }
+.contacts_container{
+  background-color: #303030;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  button{
+    height: 30px;
+    background-color: #303030;
+    border: 2px solid $mainColor;
+    color: white;
+    padding: 5px 20px;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}
+.socials{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  img{
+    margin: 0px 10px;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  p{
+    color: $mainColor;
+    
+  }
+}
+
 </style>
